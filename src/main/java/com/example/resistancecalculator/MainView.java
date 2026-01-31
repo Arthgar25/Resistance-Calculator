@@ -2,9 +2,8 @@ package com.example.resistancecalculator;
 
 import javafx.geometry.Insets;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 
-public class MainView extends VBox {
+public class MainView extends HBox {
         private Color primerColor;
     private Color segundoColor;
     private Color tercerColor;
@@ -22,7 +21,11 @@ public class MainView extends VBox {
         """);
 
         primerColor = new Color("Primer Color");
-        getChildren().addAll(primerColor);
+        segundoColor = new Color("Segundo Color");
+        tercerColor = new Color("Tercer Color");
+        cuartoColor = new Color("Cuarto Color");
+        quintoColor = new Color("Quinto Color");
+        getChildren().addAll(primerColor,  segundoColor, tercerColor, cuartoColor, quintoColor);
 
     }
 }
