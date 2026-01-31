@@ -5,12 +5,11 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 public class MainView extends VBox {
-    private HBox bandas;
-    private VBox primerColor;
-    private VBox segundoColor;
-    private VBox tercerColor;
-    private VBox cuartoColor;
-    private VBox quintoColor;
+        private Color primerColor;
+    private Color segundoColor;
+    private Color tercerColor;
+    private Color cuartoColor;
+    private Color quintoColor;
 
     public MainView() {
         setSpacing(12);
@@ -22,7 +21,8 @@ public class MainView extends VBox {
             -fx-background-color: #f9f9f9;
         """);
 
-
+        primerColor = new Color("Primer Color");
+        getChildren().addAll(primerColor);
 
     }
 }
