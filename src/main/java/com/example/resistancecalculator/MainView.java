@@ -1,6 +1,7 @@
 package com.example.resistancecalculator;
 
 import javafx.geometry.Insets;
+import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 
 public class MainView extends HBox {
@@ -9,6 +10,7 @@ public class MainView extends HBox {
     private Color tercerColor;
     private Color cuartoColor;
     private Color quintoColor;
+    private Label result;
 
     public MainView() {
         setSpacing(12);
@@ -25,7 +27,9 @@ public class MainView extends HBox {
         tercerColor = new Color("Tercer Color");
         cuartoColor = new Color("Cuarto Color");
         quintoColor = new Color("Quinto Color");
-        getChildren().addAll(primerColor,  segundoColor, tercerColor, cuartoColor, quintoColor);
+        result = new Label("Result: ");
+
+        getChildren().addAll(primerColor,  segundoColor, tercerColor, cuartoColor, quintoColor, result);
 
     }
 }

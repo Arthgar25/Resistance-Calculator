@@ -35,4 +35,8 @@ public enum ResistorColor {
     public Double getTolerance() {
         return tolerance;
     }
+
+    public javafx.scene.paint.Color getFxColor() {
+        return javafx.scene.paint.Color.valueOf(this.name());
+    }
 }

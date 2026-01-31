@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         MainView mainView = new MainView();
         root.setCenter(mainView);
 
-        Scene scene = new Scene(root, 320, 240);
+        Scene scene = new Scene(root, 720, 480);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
