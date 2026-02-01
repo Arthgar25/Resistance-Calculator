@@ -8,7 +8,7 @@ public enum ResistorColor {
     BROWN(1, 10.0, 1.0, Color.SADDLEBROWN),
     RED(2, 100.0, 2.0, Color.RED),
     ORANGE(3, 1_000.0, null, Color.ORANGE),
-    YELLOW(4, 10_000.0, null, Color.YELLOW),
+    YELLOW(4, 10_000.0, 5.0, Color.YELLOW),
     GREEN(5, 100_000.0, 0.5, Color.GREEN),
     BLUE(6, 1_000_000.0, 0.25, Color.BLUE),
     VIOLET(7, 10_000_000.0, 0.1, Color.VIOLET),
